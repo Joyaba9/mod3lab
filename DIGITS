@@ -1,0 +1,52 @@
+package bryan.guessnum;
+
+/**
+ *
+ * @author EL GUARDIAN
+ */
+
+
+import java.util.Scanner;
+
+
+public class digits {
+    
+    
+public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+    
+  //  System.out.print("Enter an integer between 1 and 99999: ");
+ //   int number = scanner.nextInt();
+    
+  //  displayDigits(number);
+     
+    
+    int a= 10;
+    int b = 5;
+    
+    
+    int num1 = intDivide( a, b);
+   int num2 = intRemainder(a, b);
+    
+   System.out.print("Quotient is " +num1 + "\n Remainder is "+ num2);
+   
+   
+   
+}
+ 
+      
+    public static int intDivide(int a, int b) {
+    return a / b;
+}
+ 
+    
+    public static int intRemainder(int a, int b) {
+    return a % b;
+}
+
+  public static void displayDigits(int number) {
+    if (number < 1 || number > 99999) {
+        System.out.println("Invalid input");
+        return;
+    }
+    
